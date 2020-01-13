@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seven Wonders of the World</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .header {
+            background-color: #cd1251;
+            text-align: center;
+            box-shadow: 0 4px 4px #300110;
+            margin-bottom: 20px;
+            padding-top: 1%;
+            font-size: 130%;
+            height: 60px;
+            top: 0;
+            position: sticky;
+            color: #fff;
+        }
+        
+        h1 {
+            text-shadow: 2px 2px 4px #111;
+        }
+        
+        body {
+            background-color: #aa6666;
+        }
+        
+        .main {
+            display: flexbox;
+        }
+        
+        .wonder {
+            flex: 100%;
+            height: 40px;
+            width: 95%;
+            height: 45px;
+            font-size: 120%;
+            background-color: #cf1;
+            margin: auto;
+            margin-bottom: 15px;
+            text-align: center;
+            padding-top: 1.5%;
+            color: #cf1212;
+        }
+        
+        .wonder:hover {
+            box-shadow: 0px 0px 3px 3px #f4cb24;
+            cursor: pointer;
+        }
+        
+        .content {
+            display: none;
+            margin: 4%;
+            text-align: justify;
+            font-size: 115%;
+            background-color: #ff9000;
+            padding: 2%;
+            box-shadow: 0px 0px 4px 4px #5b3407;
+            border-radius: 5px;
+            font-size: 110%;
+        }
+        
+        h3 {
+            text-align: center;
+            color: #ad1616;
+            font-size: 140%;
+            margin-bottom: 2%;
+        }
+        
+        .button {
+            color: #f00;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #f00;
+            width: 20%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-left: 38%;
+            margin-top: 5%;
+            margin-bottom: 3%;
+        }
+        
+        .button:hover {
+            background-color: #f00;
+            color: #fff;
+            font-weight: bolder;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 10%;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .msg {
+            display: none;
+            position: fixed;
+            top: 30%;
+            background-color: #fff;
+            width: 60%;
+            margin-left: 20%;
+            padding: 2%;
+            text-align: justify;
+            border-radius: 4px;
+            border-style: solid;
+            border-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div clas="heading">
+            <h1>Seven Wonders</h1>
+        </div>
+    </div>
+    <div class="body">
+        <div class="main">
+            <div class="wonder">
+                <h2>Great Wall Of China</h2>
+            </div>
+            <div class="wonder">
+                <h2>Petra</h2>
+            </div>
+            <div class="wonder">
+                <h2>Colosseum</h2>
+            </div>
+            <div class="wonder">
+                <h2>Chichen Itza</h2>
+            </div>
+            <div class="wonder">
+                <h2>Machu Picchu</h2>
+            </div>
+            <div class="wonder">
+                <h2>Taj Mahal</h2>
+            </div>
+            <div class="wonder">
+                <h2>Christ the Redeemer</h2>
+            </div>
+        </div>
+        <div class="content great-wall">
+            <h3>Great Wall of China</h3>
+            The Great Wall of China is the collective name of a series of fortification systems generally built across the historical northern borders of China to protect and consolidate territories of Chinese states and empires against various nomadic groups of
+            the steppe and their polities. Several walls were being built from as early as the 7th century BC by ancient Chinese states; selective stretches were later joined together by Qin Shi Huang (220–206 BC), the first Emperor of China. Little of
+            the Qin wall remains. Later on, many successive dynasties have built and maintained multiple stretches of border walls. The most well-known sections of the wall were built by the Ming dynasty (1368–1644).
+            <br> A comprehensive archaeological survey, using advanced technologies, has concluded that the walls built by the Ming dynasty measure 8,850 km (5,500 mi).Today, the defensive system of the Great Wall is generally recognized as one of the
+            most impressive architectural feats in history.
+            <br>
+            <input type="button" onclick="hide()" value="CLOSE" class="button close">
+        </div>
+        <div class="content petra">
+            <h3>Petra</h3>
+            Petra, originally known to its inhabitants as Raqmu,3 is a historical and archaeological city in southern Jordan. Petra lies around Jabal Al-Madbah in a basin surrounded by mountains which form the eastern flank of the Arabah valley that runs from the
+            Dead Sea to the Gulf of Aqaba.The area around Petra has been inhabited as early as 7,000 BC,5 and the Nabataeans might have settled in what would become the capital city of their kingdom, as early as the 4th century BC.6 However, archaeological
+            work has only discovered evidence of Nabataean presence dating back to the second century BC,7 by which time Petra had become their capital.5 The Nabataeans were nomadic Arabs who invested in Petra's proximity to the trade routes by establishing
+            it as a major regional trading hub.
+            <br>, Petra is also called the 'Rose City' because of the colour of the stone from which it is carved. It has been a UNESCO World Heritage Site since 1985.
+            <br>
+            <input type="button" onclick="hide()" value="CLOSE" class="button close">
+        </div>
+        <div class="content colosseum">
+            <h3>Colosseum</h3>
+            The Colosseum or Coliseum, is an oval amphitheatre in the centre of the city of Rome, Italy. Built of travertine limestone, tuff (volcanic rock), and brick-faced concrete,1 it was the largest amphitheatre ever built at the time and held 50,000 to 80,000
+            spectators. The Colosseum is situated just east of the Roman Forum. Construction began under the emperor Vespasian in AD 722 and was completed in AD 80 under his successor and heir, Titus.3 Further modifications were made during the reign
+            of Domitian (81–96).4 These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its association with their family name (Flavius).
+            <br>The Colosseum could hold an estimated 50,000 to 80,000 spectators at various points of its history over the centuries,56 having an average audience of some 65,000;78 it was used for gladiatorial contests and public spectacles such as mock
+            sea battles, etc.
+            <br>
+            <input type="button" onclick="hide()" value="CLOSE" class="button close">
+        </div>
+        <div class="content chichen-itza">
+            <h3>Chichen Itza</h3>
+            Chichen Itzawas a large pre-Columbian city built by the Maya people of the Terminal Classic period. The archaeological site is located in Tinúm Municipality, Yucatán State, Mexico.1 Chichen Itza was a major focal point in the Northern Maya Lowlands from
+            the Late Classic (c. AD 600–900) through the Terminal Classic (c. AD 800–900) and into the early portion of the Postclassic period (c. AD 900–1200). The site exhibits a multitude of architectural styles, reminiscent of styles seen in central
+            Mexico and of the Puuc and Chenes styles of the Northern Maya lowlands. The presence of central Mexican styles was once thought to have been representative of direct migration or even conquest from central Mexico, but most contemporary interpretations
+            view the presence of these non-Maya styles more as the result of cultural diffusion.
+            <br>Chichen Itza was one of the largest Maya cities and it was likely to have been one of the mythical great cities, or Tollans, referred to in later Mesoamerican literature.2 The city may have had the most diverse population in the Maya world,
+            a factor that could have contributed to the variety of architectural styles at the site.3
+            <br>
+            <input type="button" onclick="hide()" value="CLOSE" class="button close">
+        </div>
+        <div class="content machu-picchu">
+            <h3>Machu Picchu</h3>
+            Machu Picchu is a 15th-century Inca citadel, located in the Eastern Cordillera of southern Peru, on a 2,430-metre (7,970 ft) mountain ridge.1213 It is located in the Cusco Region, Urubamba Province, Machupicchu District,14 above the Sacred Valley, which
+            is 80 kilometres (50 mi) northwest of Cuzco and through which the Urubamba River flows, cutting through the Cordillera and creating a canyon with a tropical mountain climate.15 Most archaeologists believe that Machu Picchu was constructed
+            as an estate for the Inca emperor Pachacuti (1438–1472). Often mistakenly referred to as the "Lost City of the Incas", it is the most familiar icon of Inca civilization. The Incas built the estate around 1450 but abandoned it a century later
+            at the time of the Spanish conquest. Although known locally, it was not known to the Spanish during the colonial period and remained unknown to the outside world until American historian Hiram Bingham brought it to international attention
+            in 1911.
+            <br>Machu Picchu was declared a Peruvian Historic Sanctuary in 1981 and a UNESCO World Heritage Site in 1983.13 In 2007, Machu Picchu was voted one of the New Seven Wonders of the World in a worldwide Internet poll.18
+            <br>
+            <input type="button" onclick="hide()" value="CLOSE" class="button close">
+        </div>
+        <div class="content taj-mahal">
+            <h3>Taj Mahal</h3>
+            Taj Mahal is an ivory-white marbel mausoleum on the south bank of teh Yamuna River in Indian city Of Agra. It was commissioned in 1632 by the Mughal Emperor Shah Jahan to the house of the tomb of his favourite wide, Mumtaz Mahal; it also houses the tomb
+            of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.
+            <br> Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated.
+            at the time to be around 32 million rupees, which in 2015 would be approximately 52.8 billion rupees
+            <br> The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage".
+            <br>
+            <input type="button" onclick="hide(this)" value="CLOSE" class="button close">
+        </div>
+        <div class="content christ-redeemer">
+            <h3>Christ The redeemer</h3>
+            Christ the Redeemer is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor
+            Gheorghe Leonida fashioned the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) high, excluding its 8-metre (26 ft) pedestal. The arms stretch 28 metres (92 ft) wide.12 The statue weighs 635 metric tons (625 long, 700
+            short tons), and is located at the peak of the 700-metre (2,300 ft) Corcovado mountain in the Tijuca Forest National Park overlooking the city of Rio de Janeiro. A symbol of Christianity across the world, the statue has also become a cultural
+            icon of both Rio de Janeiro and Brazil, and is listed as one of the New7Wonders of the World.3 It is made of reinforced concrete and soapstone.456
+            <br>
+            <input type="button" onclick="hide()" value="CLOSE" class="button close">
+        </div>
+    </div>
+    <div class="msg">
+        <p>Content Displayed here has been copied from Wikipedia!</p>
+        <input type="button" class="button" value="OK" onclick="closemsg()">
+    </div>
+    <div class="footer">
+        Website created by:
+        <br> &copy; Srajan Gupta
+    </div>
+</body>
+<script>
+    window.onload = run;
+
+    function run() {
+        document.querySelector('.msg').style.display = 'block';
+    }
+    const a = document.querySelectorAll('.content');
+    document.querySelectorAll('.wonder').forEach((w, i) => {
+        w.addEventListener('click', (e) => {
+            document.querySelector('.main').style.display = 'none';
+            a[i].style.display = 'block';
+        })
+    });
+
+    function hide() {
+        a.forEach(x => {
+            x.style.display = 'none';
+        });
+        document.querySelector('.main').style.display = 'block';
+    }
+
+    function closemsg() {
+        document.querySelector('.msg').style.display = 'none';
+    }
+</script>
+
+</html>
